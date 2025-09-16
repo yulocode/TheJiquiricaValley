@@ -11,7 +11,7 @@ function App() {
       <div>
         <img src={Gaara} className="logo" alt="Gaara GIF" />
       </div>
-      <h1>Folha do Careca</h1>
+      <h1>☠️☠️</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           FARMADOR DE AURA {count}
