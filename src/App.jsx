@@ -11,18 +11,13 @@ function App() {
       <div>
         <img src={Gaara} className="logo" alt="Gaara GIF" />
       </div>
-      <h1>☠️☠️</h1>
-      <div className="card">
+      <h1>FARMADOR DE AURA</h1>
+      <div>
+        <p> <b> FARM AURA</b></p>
         <button onClick={() => setCount((count) => count + 1)}>
-          FARMADOR DE AURA {count}
+          ☠️ {count} ☠️
         </button>
-        <p>
-          FARM DE AURA
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
