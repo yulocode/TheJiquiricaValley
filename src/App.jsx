@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <div className="top">
-        <Link to="/login">LOGIN                                     </Link>
+        <Link to="/login">LOGIN</Link> | 
         <Link to="/">HOME</Link>
       </div>
 
