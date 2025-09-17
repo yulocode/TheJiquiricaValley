@@ -1,28 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import Gaara from './assets/gaara-naruto.gif'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import LoginPage from "./LoginPage";
 import './App.css'
-import LoginPage from './LoginPage.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div class="top">
-        <LoginPage />
+    <Router>
+      <div className="top">
+        <Link to="/login">LOGIN                                     </Link>
+        <Link to="/">HOME</Link>
       </div>
-      <div>
-        <img src={Gaara} className="logo" alt="Gaara GIF" />
-      </div>
-      <h1>FARMADOR DE AURA</h1>
-      <div>
-        <p> <b> FARM AURA</b></p>
-        <button onClick={() => setCount((count) => count + 1)}>
-          ☠️ {count} ☠️
-        </button>
-      </div>
-    </>
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="page">
+              <h1>JORNAL</h1>
+              <p>Welcome to the homepage!</p>
+            </div>
+          }
+        />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   )
 }
 
