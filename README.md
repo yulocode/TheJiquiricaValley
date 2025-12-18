@@ -21,7 +21,6 @@ Follow these steps to run the project locally.
 - Node.js
 - npm or yarn
 
-### Follow these steps to set up the application.
    ```bash
    git clone https://github.com/yulocode/TheJiquiricaValley
    cd TheJiquiricaValley
