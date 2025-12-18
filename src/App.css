@@ -2,22 +2,44 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: justify;
 }
+
 .top {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0 0 auto 0;            /* top:0; left:0; right:0 */
   background: #202020;
-  padding: 1em;
-  color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.5em;
+  padding: 0.75rem 2rem;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: 1.1rem;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   gap: 2rem;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  transform: translateY(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+/* links inside navbar */
+.top a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.top a:hover {
+  text-decoration: underline;
+}
+
+/* class that hides the navbar */
+.top.hidden {
+  transform: translateY(-100%);
+}
+
 
 .page{
   margin-top: -25px;
