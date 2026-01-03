@@ -21,6 +21,7 @@ This app allows users to write, edit, and manage personal journal entries in an 
 
 <br>
 Follow these steps to run the project locally.
+   
    ```bash
    git clone https://github.com/yulocode/TheJiquiricaValley
    cd TheJiquiricaValley
